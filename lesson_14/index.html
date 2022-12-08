@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <title>lesson 14</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <h1 class="header__title">
+            Модуль <span class="header__span">FLEX</span>
+         </h1>
+      </header>
+      <main class="page">
+         <div class="page__container">
+            <div class="block">
+               <!-- Перший блок -->
+               <!-- Властивості flex-контейнера -->
+               <div class="properties">
+                  <h2>Властивості flex-контейнера</h2>
+               </div>
+               <div class="block__definition"><span class="block__d">display</span> додається до батьківського
+                  елемента. Це тумблер, який переключає на flex.
+               </div>
+               <div class="square">
+                  <div class="display">
+                     <div class="display__name">flex</div>
+                     <div class="display__flex items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">display:flex;</div>
+                  </div>
+                  <div class="display">
+                     <div class="display__name">inline-flex</div>
+                     <div class="display__inline-flex items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">display:inline-flex;</div>
+                  </div>
+               </div>
+               <!-- Другий блок -->
+               <div class="block__definition"><span class="block__d">flex-wrap</span> Визначає, чи зможуть flex-елементи
+                  переміщатися на наступні рядки,<br> коли перестають поміщатися всередині flex-контейнера.
+               </div>
+               <div class="square">
+                  <div class="display">
+                     <div class="display__name">nowrap</div>
+                     <div class="display__nowrap items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">flex-wrap:nowrap;</div>
+                  </div>
+                  <div class="display">
+                     <div class="display__name">wrap</div>
+                     <div class="display__wrap items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">flex-wrap:wrap;</div>
+                  </div>
+                  <div class="display">
+                     <div class="display__name">wrap-reverse</div>
+                     <div class="display__wrap-reverse items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">flex-wrap:wrap-reverse;</div>
+                  </div>
+               </div>
+               <!-- Третій блок -->
+               <div class="block__definition"><span class="block__d">justify-content</span> Визначає вирівнювання вздовж
+                  основної вісі.
+               </div>
+               <div class="square">
+                  <div class="display">
+                     <div class="display__name">flex-start</div>
+                     <div class="display__flex-start items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">justify-content:flex-start;</div>
+                  </div>
+                  <div class="display">
+                     <div class="display__name">flex-end</div>
+                     <div class="display__flex-end items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">justify-content:flex-end;</div>
+                  </div>
+                  <div class="display">
+                     <div class="display__name">center</div>
+                     <div class="display__center items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">justify-content:center;</div>
+                  </div>
+               </div>
+               <!-- Четвертий блок -->
+               <div class="block__definition"><span class="block__d">justify-content</span> Властивості, які впливають
+                  на простір в flex-контейнері.
+               </div>
+               <div class="square">
+                  <div class="display">
+                     <div class="display__name">space-between</div>
+                     <div class="display__space-between items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">justify-content:space-between;</div>
+                  </div>
+                  <div class="display">
+                     <div class="display__name">space-around</div>
+                     <div class="display__space-around items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">justify-content:space-around;</div>
+                  </div>
+                  <div class="display">
+                     <div class="display__name">space-evenly</div>
+                     <div class="display__space-evenly items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">justify-content:space-evenly;</div>
+                  </div>
+               </div>
+               <!-- П'ятий блок -->
+               <div class="block__definition"><span class="block__d">align-items</span> Властивості, які впливають
+                  на поперечну вісь.
+               </div>
+               <div class="square">
+                  <div class="display">
+                     <div class="display__name">stretch</div>
+                     <div class="display__stretch items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">align-items:stretch;</div>
+                  </div>
+                  <div class="display">
+                     <div class="display__name">flex-start</div>
+                     <div class="display__flex-startt items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">align-items:flex-start;</div>
+                  </div>
+                  <div class="display">
+                     <div class="display__name">flex-end</div>
+                     <div class="display__flex-endd items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">align-items:flex-end;</div>
+                  </div>
+                  <div class="display">
+                     <div class="display__name">center</div>
+                     <div class="display__centerr items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">align-items:center;</div>
+                  </div>
+               </div>
+               <!-- Шостий блок -->
+               <div class="block__definition"><span class="block__d">flex-direction</span> Встановлює основну вісь.
+               </div>
+               <div class="square">
+                  <div class="display">
+                     <div class="display__name">row</div>
+                     <div class="display__row items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">flex-direction:row;</div>
+                  </div>
+                  <div class="display">
+                     <div class="display__name">row-reverse</div>
+                     <div class="display__row-reverse items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">flex-direction:row-reverse;</div>
+                  </div>
+                  <div class="display">
+                     <div class="display__name">column</div>
+                     <div class="display__column items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">flex-direction:column;</div>
+                  </div>
+                  <div class="display">
+                     <div class="display__name">column-reverse</div>
+                     <div class="display__column-reverse items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">flex-direction:column-reverse;</div>
+                  </div>
+               </div>
+               <!-- Властивості flex-елементів -->
+               <div class="properties">
+                  <h2>Властивості flex-елементів</h2>
+               </div>
+               <div class="block__definition"><span class="block__d">align-self</span> Перевизначає для конкретного
+                  flex-елементу вирівнювання вздовж поперечної вісі.
+               </div>
+               <div class="square">
+                  <div class="display">
+                     <div class="display__name">align-self</div>
+                     <div class="elements-flex list">
+                        <div class="list__item">1</div>
+                        <div class="list__item">2</div>
+                        <div class="list__item">3</div>
+                        <div class="list__item">4</div>
+                     </div>
+                     <div class="display__text">align-self:center/flex-start/flex-end;</div>
+                  </div>
+               </div>
+               <!-- Властивості впливають на розмір -->
+               <div class="block__definition">Універсальний запис<span class="block__d">flex:0 1 auto;</span><br> 3
+                  основних властивостей, які впливають на поведінку flex-елементів,
+                  поведінку з їх розміру.
+               </div>
+               <div class="square">
+                  <div class="display">
+                     <div class="display__name">flex-grow</div>
+                     <div class="display__flex-grow items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">flex-grow:0-заборонено збільшуваться/1-дозволено;<br> flex-grow: 1;
+                     </div>
+                  </div>
+                  <div class="display">
+                     <div class="display__name">flex-shrink</div>
+                     <div class="display__flex-shrink items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">flex-shrink:0-заборонено зменьшуватися/1-дозволено;<br>flex-shrink: 1;
+                     </div>
+                  </div>
+                  <div class="display">
+                     <div class="display__name">flex-basis</div>
+                     <div class="display__flex-basis items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">flex-basis:auto/px/%;<br> flex-basis: 300px;</div>
+                  </div>
+               </div>
+               <!-- Інтелектуальний відступ -->
+               <div class="properties">
+                  <h2>Властивість flex-контейнера</h2>
+               </div>
+               <div class="block__definition">Універсальний запис<span class="block__d">gap:20px;</span><br>
+                  Інтелектуальний відступ.
+               </div>
+               <div class="square">
+                  <div class="display">
+                     <div class="display__name">column-gap</div>
+                     <div class="display__column-gap items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">Відстань між колонками.
+                     </div>
+                  </div>
+                  <div class="display">
+                     <div class="display__name">row-gap</div>
+                     <div class="display__row-gap items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">Відстань між рядками.
+                     </div>
+                  </div>
+               </div>
+               <!-- Порядок розташування -->
+               <div class="block__definition">
+                  <span class="block__d">order</span><br>
+                  Керує порядком, в якому розташовуються flex-елементи всередині flex-контейнера.
+               </div>
+               <div class="square">
+                  <div class="display">
+                     <div class="display__name">order</div>
+                     <div class="display__order items">
+                        <div class="items__item">1</div>
+                        <div class="items__item">2</div>
+                        <div class="items__item">3</div>
+                        <div class="items__item">4</div>
+                     </div>
+                     <div class="display__text">flex-елементи:nth-child(1){
+                        order:2;}
+                     </div>
+                  </div>
+               </div>
+               <div class="buttom">
+                  <a href="index2.html" class="buttom__href">Практика</a>
+               </div>
+            </div>
+         </div>
+      </main>
+   </div>
+   <footer class="footer"></footer>
+</body>
+
+</html>

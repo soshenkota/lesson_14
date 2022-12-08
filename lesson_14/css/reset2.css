@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after {
+margin: 0;
+padding: 0;
+border: none;
+box-sizing: border-box;
+}
+li {
+   list-style: none;
+}
+a {
+   color: inherit;
+   text-decoration: none;
+}
+img {
+vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+input,
+button,
+textarea {
+   font-weight: inherit;
+   font-size: inherit;
+}
+button {
+   cursor: pointer;
+   color: inherit;
+   background-color: inherit;
+}
+html,
+body{
+   height: 100%;
+}
+body {
+   line-height: 1;
+}
+.wrapper{
+   position: relative;
+   overflow: hidden;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   background-color: blanchedalmond;
+   align-items: center;
+}
+.wrapper> main{
+   flex-grow: 1;
+}
+.header{
+   background-color: aquamarine;
+   font-size: 30px;
+}
+.page__container{
+   padding-top: 50px;
+  
+}
+.page__name {
+   font-size: 30px;
+   border: 1px solid white;
+   width:300px;
+   height: 80px;
+   text-align: center;
+   padding-top: 20px;
+   border-radius: 30%;
+   background-color: blueviolet;
+   color: white;
+   margin-bottom: 50px;
+}
+.text-block {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   row-gap: 20px;
+}
+.text-block__title {
+   font-size: 30px;
+}
+.text-block__text {
+   font-size: 30px;
+   line-height: 1.5;
+   color: blue;
+}
+.text-block__link {
+   font-size: 30px;
+   color: yellowgreen;
+   margin-bottom:100px;
+   transition: color 0.5s ease 0s;
+}
+.text-block__link:hover{
+   color: red;
+}
+.cards{
+   display: flex;
+   margin: 0 -15px;
+   margin-bottom: 100px;
+}
+.cards__column {
+   flex: 0 1 33.333%;
+   padding: 0 15px;
+}
+.cards__item {
+   background-color: rgb(244, 244, 150);
+   padding: 15px;
+   box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+   min-height: 100%;
+}
+.item-card {
+   display: flex;
+   flex-direction: column;
+   gap:20px;
+   align-items: flex-start;
+}
+.item-card__image img{
+   max-width: 100%;
+}
+.item-card__text {
+   flex-grow: 1;
+   font-size: 30px;
+}
+.item-card__button {
+   color: yellow;
+   padding: 5px;
+   font-size: 24px;
+   border: 1px solid blue;
+   background-color: blue;
+   border-radius: 10%;
+}
+span{
+   color: red;
+}
+.page__name--size{
+   height: 150px;
+}
+.link{
+   color: blue;
+   display: inline-flex;
+   align-items: center;
+   font-size: 40px;
+   gap:20px;
+   margin-bottom: 50px;
+   text-decoration: underline;
+}
+.link::before{
+   content: "";
+   flex: 0 0 40px;
+   width: 40px;
+   height: 40px;
+   background-color: black;
+   margin-left: 50px;
+}
+.footer{
+   background-color: aqua;
+   font-size: 30px;
+}

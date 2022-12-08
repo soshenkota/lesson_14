@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset2.css">
+   <title>Практика</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">Header завжди буде зверху, якщо ми main дозволимо збільшуватися, а wrapper задамо display:
+         flex</header>
+      <main class="page">
+         <div class="page__container">
+            <div class="page__name">Приклад з текстом</div>
+            <div class="text-block">
+               <h1 class="text-block__title">Я заголовок</h1>
+               <div class="text-block__text">За допомогою <mark>row-gap</mark> ми ставимо відступ між
+                  заголовком-текстом-посиланням.
+                  І навіть, якщо міняються місцями ці елементи, відступу у кінцевого елементу не буде, тому що
+                  <mark>row-gap</mark>
+                  ставить відступ тільки між елементами. Це можно зробити, якщо відступ буде заданий однаковий для всіх
+                  елементів. Якщо різний, тоді застосовуємо<mark>{ .text-block__title:not(:last-child){
+                     margin-bottom:30px;}
+                     .text-block__link:not(:last-child){ margin-bottom:15px;}}. Батьківському елементу задаємо
+                     display:flex.</mark>
+               </div>
+               <a href="" class="text-block__link">Я посилання</a>
+            </div>
+            <div class="page__name">Приклад з картками</div>
+            <div class="cards">
+               <div class="cards__column">
+                  <div class="cards__item item-card">
+                     <div class="item-card__image">
+                        <img src="img/photo_2022-12-06_17-40-40.jpg" alt="">
+                     </div>
+                     <div class="item-card__text">Для кращий адаптації для зоображення треба додавати
+                        <span>max-width:100%</span>
+                     </div>
+                     <a href="" class="item-card__button">Button</a>
+                  </div>
+               </div>
+               <div class="cards__column">
+                  <div class="cards__item item-card">
+                     <div class="item-card__image">
+                        <img src="img/photo_2022-12-06_17-40-40.jpg" alt="">
+                     </div>
+                     <div class="item-card__text">Для того, щоб контент займав 100% додаємо <span>min-height:100%</span>
+                     </div>
+                     <a href="" class="item-card__button">Button</a>
+                  </div>
+               </div>
+               <div class="cards__column">
+                  <div class="cards__item item-card">
+                     <div class="item-card__image">
+                        <img src="img/photo_2022-12-06_17-40-40.jpg" alt="">
+                     </div>
+                     <div class="item-card__text">Ми дозволяємо тексту збільшуватися-<span>flex-grow:1</span>
+                     </div>
+                     <a href="" class="item-card__button">Button</a>
+                  </div>
+               </div>
+            </div>
+            <div class="page__name page__name--size">Приклад з width (приклад з текстом та псевдоелементом)</div>
+            <a href="" class="link">Коли тут довгий текст,то додаємо width.</a>
+            <div class="page__name page__name--size">Приклад з width (приклад з текстом та зоображенням)</div>
+         </div>
+      </main>
+      <footer class="footer">Footer завжди буде зверху, якщо ми main дозволимо збільшуватися, а wrapper задамо display:
+         flex
+      </footer>
+   </div>
+</body>
+
+</html>
